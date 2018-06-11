@@ -3,5 +3,16 @@ html  {
 }
 
 body {
-	padding: 15px;
+	padding: 120px;
+ 	background: -moz-linear-gradient(top, #171717, #003777);
+ 	background: -ms-linear-gradient(top, #171717, #003777);
+ 	background: -webkit-linear-gradient(top, #474747, #777);
+    background-attachment: fixed;
+    color: #333;
+}
+#tweet-list{ 
+	margin-bottom:30px; 
+}
+.tweet-item {
+	margin-bottom: 10px;
 }
