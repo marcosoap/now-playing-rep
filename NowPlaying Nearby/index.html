@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bunny.inc | #NowPlaying Nearby</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+	<!-- Fonts Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Bootstrap Social Buttons -->
+    <link href="css/docs.css" rel="stylesheet" >
+    <link href="css/bootstrap-social.css" rel="stylesheet" >
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+		<!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-8 header-column">
+                <h1 class="page-header"><strong>#NowPlaying Nearby</strong><br></h1>	
+				<p class="subtitle">
+                    This page shows #nowplaying nearby tweets that contain a youtube link. It also allows you to post a #nowplaying tweet with a YouTube link.
+				</p>
+            </div>
+        </div>
+        <div class="row" id="TwittPost">
+				<div class="col-md-4 col-sm-6 col-xs-12 TweetInputsForm" id="sharevideo">
+                    Video URL: <input type="url" name="videourl" id="videourlid" placeholder="Paste youtube link here" style="width:100%; display:block">
+				</div>
+				<div class="col-md-5 col-sm-6 col-xs-12 TweetInputsForm" id="comment">
+					<span class="hiddent2">Comment: <input type="text" name="comment" id="commentid" style="width:100%;display:block" ></span>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 TweetInputsForm">
+					<span class="hiddent2"> <button type="button" class="btn btn-primary btn-sm" onclick="submitPost()" style="width:100%; display:block; height: 100%;">#NowPlaying Tweet</button></span>     
+				</div>
+        </div>
+	</div>
+	
+	<div id="container" class="container">
+        <a class="twitter-timeline" href="https://twitter.com/BInowplaying" data-widget-id="677324155252039681">Tweets by @BInowplaying</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	
+	
+	
+	<!-- Footer -->
+        <footer>
+            <div>  
+            <img alt="Bunny Inc Logo" src="resources/img/BI.png"
+                 style="display: block; margin-left: auto; margin-right: auto; margin-top: 5%; width: 7%;">
+            </div>
+        </footer>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+</body>
+
+</html>
